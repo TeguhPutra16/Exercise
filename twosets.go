@@ -71,6 +71,6 @@ func main() {
 	nums := []int{3, 2, 4}
 	target := 6
 
-	fmt.Println(twoSum2(nums, target))
+	fmt.Println(twoSum3(nums, target))
 
 }
