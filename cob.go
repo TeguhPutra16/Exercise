@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	str := "teguh"
+	str := []string{"q", "w"}
 
-	fmt.Println(str[:0])
+	fmt.Println(str[:1])
 
 }

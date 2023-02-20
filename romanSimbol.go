@@ -19,7 +19,7 @@ func romanToInt(s string) (number int) {
 		// fmt.Println("sArray i", sArray[i])
 
 		if i+1 >= len(s) {
-			number += symbolMap[string(s[i])]
+			number = number + symbolMap[string(s[i])]
 		} else if symbolMap[string(s[i])] < symbolMap[string(s[i+1])] {
 			number -= symbolMap[string(s[i])]
 		} else {

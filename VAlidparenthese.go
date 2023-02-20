@@ -18,6 +18,7 @@ func isValid(s string) bool {
 
 			stack = append(stack, v)
 		} else {
+
 			lastIndex := len(stack) - 1
 			if lastIndex == -1 {
 				return false
@@ -25,6 +26,7 @@ func isValid(s string) bool {
 			lastOpenParenthese := stack[lastIndex]
 			if v == m[lastOpenParenthese] {
 				stack = stack[:lastIndex]
+				fmt.Println("stack", stack)
 			} else {
 				return false
 			}
@@ -37,6 +39,6 @@ func isValid(s string) bool {
 
 func main() {
 
-	fmt.Println(isValid("{(})"))
+	fmt.Println(isValid("({){}}"))
 
 }
