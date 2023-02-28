@@ -15,7 +15,6 @@ func pickingNumbers(a []int32) int32 {
 
 	}
 	max := max(arrMap)
-	fmt.Println(arrMap)
 
 	for key, _ := range arrMap {
 		if arrMap[key] != 0 && arrMap[key+1] != 0 {
