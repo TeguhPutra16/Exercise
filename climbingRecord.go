@@ -7,7 +7,6 @@ import (
 func climbingLeaderboard(ranked []int32, player []int32) []int32 {
 	// Write your code here
 	MapRanked, ArrRank := Ranked(ranked)
-	fmt.Println(MapRanked)
 	MyLeaderBoard := []int32{}
 
 	for i := 0; i < len(player); i++ {
@@ -27,9 +26,9 @@ func climbingLeaderboard(ranked []int32, player []int32) []int32 {
 			}
 
 			for j := 0; j < len(ArrRank)-1; j++ {
-				fmt.Println("j", j)
+
 				if PlayerValue < ArrRank[j] && PlayerValue > ArrRank[j+1] {
-					fmt.Println("b")
+
 					MyLeaderBoard = append(MyLeaderBoard, MapRanked[ArrRank[j+1]])
 				}
 

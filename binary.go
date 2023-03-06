@@ -26,8 +26,8 @@ func binarySearch(arr []int, x int) int {
 }
 
 func main() {
-	arr := []int{1, 2, 3, 4, 5}
-	x := 2
+	arr := []int{1, 2, 3, 4, 5, 6}
+	x := 4
 
 	result := binarySearch(arr, x)
 
